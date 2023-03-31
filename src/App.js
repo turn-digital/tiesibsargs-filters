@@ -27,7 +27,7 @@ function App() {
     const query = event.target.value;
     let updatedList = [...data];
     updatedList = updatedList.filter((item) => {
-      return item.title.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+      return item.title.toLowerCase().includes(query.toLowerCase());
     });
     setFilteredData(updatedList);
   };
