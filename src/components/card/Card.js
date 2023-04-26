@@ -1,6 +1,7 @@
 function Card(props) {
   return (
     <div>
+      count: {props?.data?.length}
       {props.data?.map((card, index) => {
         return (
           <div
