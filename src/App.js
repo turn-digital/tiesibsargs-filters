@@ -128,7 +128,7 @@ function App() {
                           id={child.id}
                           key={child.id}
                         >
-                          {theme.title}
+                          {child.title}
                         </button>
                       </div>
                     );
